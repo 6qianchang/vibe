@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的个人网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">个人网站</p>
+    <h1>你好，欢迎来到我的主页</h1>
+    <p class="intro">这是一个只用 HTML、CSS 和 JavaScript 做的简单网站。下面有一个可以计算加减乘除的计算器。</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>关于我</h2>
+      <p>我正在学习网页制作。页面结构写在 HTML 里，外观写在 CSS 里，计算器的计算过程写在 JavaScript 里。</p>
+    </section>
+
+    <section class="card">
+      <h2>计算器</h2>
+      <div class="calculator">
+        <div class="display" id="display" aria-live="polite">0</div>
+        <div class="keys">
+          <button type="button" class="key key-func" data-action="clear">AC</button>
+          <button type="button" class="key key-func" data-action="sign">+/-</button>
+          <button type="button" class="key key-func" data-action="percent">%</button>
+          <button type="button" class="key key-op" data-operator="/">÷</button>
+
+          <button type="button" class="key" data-digit="7">7</button>
+          <button type="button" class="key" data-digit="8">8</button>
+          <button type="button" class="key" data-digit="9">9</button>
+          <button type="button" class="key key-op" data-operator="*">×</button>
+
+          <button type="button" class="key" data-digit="4">4</button>
+          <button type="button" class="key" data-digit="5">5</button>
+          <button type="button" class="key" data-digit="6">6</button>
+          <button type="button" class="key key-op" data-operator="-">−</button>
+
+          <button type="button" class="key" data-digit="1">1</button>
+          <button type="button" class="key" data-digit="2">2</button>
+          <button type="button" class="key" data-digit="3">3</button>
+          <button type="button" class="key key-op" data-operator="+">+</button>
+
+          <button type="button" class="key key-zero" data-digit="0">0</button>
+          <button type="button" class="key" data-action="decimal">.</button>
+          <button type="button" class="key key-equal" data-action="equals">=</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
